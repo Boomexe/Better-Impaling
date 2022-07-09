@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "betterimpaling",
   "version": "${version}",
 
   "name": "Better Impaling",
-  "description": "Makes impaling function like on Bedrock!",
+  "description": "Makes the Java Impaling Enchantment function like its Bedrock counterpart!",
   "authors": [
     "Boomexe"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/better-impaling-fabric/",
+    "sources": "https://github.com/Boomexe/Better-Impaling"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/betterimpaling/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -22,6 +22,10 @@
       "net.boomexe.betterimpaling.BetterImpaling"
     ]
   },
+
+  "mixins": [
+    "betterimpaling.mixins.json"
+  ],
 
   "depends": {
     "fabricloader": ">=0.14.6",

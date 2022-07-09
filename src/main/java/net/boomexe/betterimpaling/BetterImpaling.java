@@ -1,21 +1,19 @@
 package net.boomexe.betterimpaling;
 
+import net.boomexe.betterimpaling.enchantment.BetterImpalingEnchantment;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.entity.EquipmentSlot;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class BetterImpaling implements ModInitializer {
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
+	public static final String MODID = "betterimpaling";
+	public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
+	public static Enchantment BETTER_IMPALING = new BetterImpalingEnchantment(Enchantment.Rarity.RARE, EquipmentSlot.MAINHAND);;
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Better Impaling Mod Initialized");
 	}
 }
