@@ -6,7 +6,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.player.PlayerEntity;
 
 public class BetterImpalingEnchantment extends Enchantment {
     public BetterImpalingEnchantment(Rarity weight, EquipmentSlot... slotTypes) {
@@ -17,12 +16,8 @@ public class BetterImpalingEnchantment extends Enchantment {
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if(!user.world.isClient()) {
             if (target.isTouchingWaterOrRain()) {
-                target.damage(DamageSource.player((PlayerEntity) user), 9 + (float)level * 2.5F);
+                target.damage(DamageSource.mob(user), 9 + (float)level * 2.5F);
             }
         }
-    }
-
-    public int getMaxLevel() {
-        return 5;
     }
 }
