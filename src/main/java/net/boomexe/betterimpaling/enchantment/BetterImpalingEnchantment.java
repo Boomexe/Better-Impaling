@@ -8,15 +8,15 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 
 public class BetterImpalingEnchantment extends Enchantment {
-    public BetterImpalingEnchantment(Rarity weight, EquipmentSlot... slotTypes) {
+    public BetterImpalingEnchantment(Rarity weight, EquipmentSlot...slotTypes) {
         super(weight, EnchantmentTarget.TRIDENT, slotTypes);
     }
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if(!user.world.isClient()) {
+        if (!user.world.isClient()) {
             if (target.isTouchingWaterOrRain()) {
-                target.damage(DamageSource.mob(user), 9 + (float)level * 2.5F);
+                target.damage(DamageSource.mob(user), 9 + (float)level * 2.5 F);
             }
         }
     }
