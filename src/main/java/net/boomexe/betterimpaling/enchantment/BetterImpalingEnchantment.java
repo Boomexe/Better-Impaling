@@ -16,7 +16,7 @@ public class BetterImpalingEnchantment extends Enchantment {
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if (!user.world.isClient()) {
             if (target.isTouchingWaterOrRain()) {
-                target.damage(DamageSource.mob(user), 9 + (float)level * 2.5 F);
+                target.damage(DamageSource.mob(user), 9 + (float)level * 2.5F);
             }
         }
     }
