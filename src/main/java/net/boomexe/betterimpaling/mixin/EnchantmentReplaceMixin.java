@@ -1,6 +1,6 @@
-package net.boomexe.betterimpaling.mixin;
+package com.boyonk.betterimpaling.mixin;
 
-import net.boomexe.betterimpaling.BetterImpaling;
+import com.boyonk.betterimpaling.BetterImpaling;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.registry.Registry;
