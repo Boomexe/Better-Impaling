@@ -1,8 +1,8 @@
-package com.boyonk.betterimpaling.enchantment;
+package net.boomexe.betterimpaling.enchantment;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
-import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityGroup;
 import net.minecraft.entity.EquipmentSlot;
 
 public class BetterImpalingEnchantment extends Enchantment {
@@ -10,7 +10,8 @@ public class BetterImpalingEnchantment extends Enchantment {
         super(weight, EnchantmentTarget.TRIDENT, slotTypes);
     }
 
-    public float getAttackDamage(int level, Entity group) {
+    @Override
+    public float getAttackDamage(int level, EntityGroup group) {
         return 0.0f;
     }
 

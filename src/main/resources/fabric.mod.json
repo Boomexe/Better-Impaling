@@ -10,7 +10,7 @@
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/better-impaling",
-    "sources": "https://github.com/AlexBurneikis/Better-Impaling"
+    "sources": "https://github.com/Boomexe/Better-Impaling"
   },
 
   "license": "MIT",
@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.boyonk.betterimpaling.BetterImpaling"
+      "net.boomexe.betterimpaling.BetterImpaling"
     ]
   },
 
