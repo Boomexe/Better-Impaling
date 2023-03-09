@@ -4,13 +4,13 @@
   "version": "${version}",
 
   "name": "Better Impaling",
-  "description": "Makes the Java Impaling Enchantment function like its Bedrock counterpart!",
+  "description": "Makes the Java Impaling Enchantment function like its Bedrock counterpart! (ported to 1.19.3 using boyonk's code)",
   "authors": [
-    "Boomexe"
+    "Boomexe, Boyonk, AlexBurneikis"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/better-impaling-fabric/",
-    "sources": "https://github.com/Boomexe/Better-Impaling"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/better-impaling",
+    "sources": "https://github.com/AlexBurneikis/Better-Impaling"
   },
 
   "license": "MIT",
@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.boomexe.betterimpaling.BetterImpaling"
+      "com.boyonk.betterimpaling.BetterImpaling"
     ]
   },
 
@@ -30,7 +30,7 @@
   "depends": {
     "fabricloader": ">=0.14.6",
     "fabric": "*",
-    "minecraft": "~1.19",
+    "minecraft": "~1.19.3",
     "java": ">=17"
   },
   "suggests": {

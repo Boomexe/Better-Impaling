@@ -1,10 +1,13 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.boomexe.betterimpaling.mixin",
+  "package": "com.boyonk.betterimpaling.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "EnchantmentReplaceMixin"
+    "EnchantmentReplaceMixin",
+    "MobEntityMixin",
+    "PlayerEntityMixin",
+    "TridentEntityMixin"
   ],
   "client": [
   ],

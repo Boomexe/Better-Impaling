@@ -1,6 +1,6 @@
-package net.boomexe.betterimpaling;
+package com.boyonk.betterimpaling;
 
-import net.boomexe.betterimpaling.enchantment.BetterImpalingEnchantment;
+import com.boyonk.betterimpaling.enchantment.BetterImpalingEnchantment;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.EquipmentSlot;
