@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Better Impaling",
-  "description": "Makes the Java Impaling Enchantment function like its Bedrock counterpart! (ported to 1.19.3 using boyonk's code)",
+  "description": "Makes the Java Impaling Enchantment function like its Bedrock counterpart!",
   "authors": [
     "Boomexe, Boyonk, AlexBurneikis"
   ],
@@ -30,7 +30,7 @@
   "depends": {
     "fabricloader": ">=0.14.6",
     "fabric": "*",
-    "minecraft": "~1.19.3",
+    "minecraft": ">=1.21",
     "java": ">=17"
   },
   "suggests": {

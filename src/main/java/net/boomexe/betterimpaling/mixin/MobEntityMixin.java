@@ -1,14 +1,14 @@
 package net.boomexe.betterimpaling.mixin;
 
-import net.boomexe.betterimpaling.BetterImpaling;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Redirect;
-import org.spongepowered.asm.mixin.Mixin;
 import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.attribute.EntityAttribute;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.MobEntity;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(MobEntity.class)
 public class MobEntityMixin {
@@ -17,7 +17,7 @@ public class MobEntityMixin {
         float f = (float)mob.getAttributeValue(EntityAttributes.GENERIC_ATTACK_DAMAGE);
 
         if (target.isTouchingWaterOrRain()) {
-            f += EnchantmentHelper.getLevel(BetterImpaling.BETTER_IMPALING, mob.getMainHandStack()) * 2.5f;
+            f += EnchantmentHelper.getLevel(Enchantments.IMPALING, mob.getMainHandStack()) * 2.5f;
         }
 
         return f;
