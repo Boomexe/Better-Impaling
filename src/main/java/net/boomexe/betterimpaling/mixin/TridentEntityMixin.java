@@ -12,8 +12,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(TridentEntity.class)
-public class TridentEntityMixin
-{
+public class TridentEntityMixin {
     @Redirect(method = { "onEntityHit(Lnet/minecraft/util/hit/EntityHitResult;)V" }, at = @At(value = "INVOKE", target = "Lnet/minecraft/enchantment/EnchantmentHelper;getAttackDamage(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityGroup;)F"))
     public float onEntityHit(ItemStack stack, final EntityGroup group, final EntityHitResult entityHitResult) {
         float f = EnchantmentHelper.getAttackDamage(stack, group);
